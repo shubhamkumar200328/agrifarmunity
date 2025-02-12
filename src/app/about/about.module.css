@@ -1,0 +1,123 @@
+/* Global Styles */
+.container {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #4caf50, #81c784);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+}
+
+/* Section Styles */
+.section {
+  margin-bottom: 60px;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4caf50;
+}
+
+.sectionText {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Team Section */
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.teamMember {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.teamMember h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.teamMember p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Call-to-Action Section */
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.ctaTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4caf50;
+}
+
+.ctaText {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .ctaTitle {
+    font-size: 1.5rem;
+  }
+}

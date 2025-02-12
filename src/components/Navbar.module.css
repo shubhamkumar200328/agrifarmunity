@@ -1,0 +1,94 @@
+/* Navbar Container  #454846*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  color: rgb(40, 39, 39);
+}
+
+/* Logo */
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* color: white; */
+  text-decoration: none;
+}
+
+/* Nav Links */
+.navLinks {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks li {
+  margin-left: 20px;
+}
+
+.navLinks a {
+  /* color: white; */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: #089f26;
+}
+
+/* Hamburger Menu Icon (Mobile) */
+.menuIcon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menuIcon .bar {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navHr {
+  border: none; /* Remove default border */
+  border-top: 4px solid #3498db; /* Bold blue line */
+  margin: 40px 0; /* Space above and below the line */
+  width: 100%; /* Ensure the line stretches across the full width */
+  transition: border-top 0.3s ease; /* Add a smooth transition for hover effect */
+}
+
+.navHr:hover {
+  border-top: 4px solid #e74c3c; /* Change color to red on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menuIcon {
+    display: flex;
+  }
+
+  .navLinks {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #4caf50;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .navLinks.active {
+    transform: translateX(0);
+  }
+
+  .navLinks li {
+    margin: 15px 0;
+  }
+}
