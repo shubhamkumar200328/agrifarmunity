@@ -22,22 +22,22 @@ const CommunityPage: React.FC = () => {
           <div className={styles.testimonialGrid}>
             <div className={styles.testimonialCard}>
               <p>
-                "AgriFarmUnity has transformed the way I connect with other
-                farmers. It's a game-changer!"
+                &quot;AgriFarmUnity has transformed the way I connect with other
+                farmers. It&apos;s a game-changer!&quot;
               </p>
               <h3>- John Doe</h3>
             </div>
             <div className={styles.testimonialCard}>
               <p>
-                "The platform is easy to use, and the community is incredibly
-                supportive."
+                &quot;The platform is easy to use, and the community is
+                incredibly supportive.&quot;
               </p>
               <h3>- Jane Smith</h3>
             </div>
             <div className={styles.testimonialCard}>
               <p>
-                "I love how AgriFarmUnity brings farmers together. Highly
-                recommend it!"
+                &quot;I love how AgriFarmUnity brings farmers together. Highly
+                recommend it!&quot;
               </p>
               <h3>- Alice Johnson</h3>
             </div>
@@ -49,7 +49,7 @@ const CommunityPage: React.FC = () => {
           <h2 className={styles.sectionTitle}>Upcoming Events</h2>
           <div className={styles.eventGrid}>
             <div className={styles.eventCard}>
-              <h3>Farmers' Market Day</h3>
+              <h3>Farmers&apos; Market Day</h3>
               <p>Date: October 15, 2023</p>
               <p>Location: AgriCity Community Center</p>
             </div>
@@ -70,9 +70,9 @@ const CommunityPage: React.FC = () => {
         <section className={styles.getInvolved}>
           <h2 className={styles.sectionTitle}>Get Involved</h2>
           <p className={styles.sectionText}>
-            Join our community and make a difference. Whether you're a farmer, a
-            supporter, or an organization, there's a place for you at
-            AgriFarmUnity.
+            Join our community and make a difference. Whether you&apos;re a
+            farmer, a supporter, or an organization, there&apos;s a place for
+            you at AgriFarmUnity.
           </p>
           <button className={styles.ctaButton}>Join Now</button>
         </section>

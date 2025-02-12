@@ -12,7 +12,8 @@ const ContactPage: React.FC = () => {
         <section className={styles.hero}>
           <h1 className={styles.heroTitle}>Contact Us</h1>
           <p className={styles.heroSubtitle}>
-            We'd love to hear from you! Reach out for any inquiries or support.
+            We&apos;d love to hear from you! Reach out for any inquiries or
+            support.
           </p>
         </section>
 
