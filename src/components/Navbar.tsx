@@ -3,6 +3,8 @@
 import React, { useState } from "react"
 import Link from "next/link"
 import styles from "@/components/Navbar.module.css"
+import logoImage from "@/assets/logo.png"
+import Image from "next/image"
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -15,8 +17,11 @@ const Navbar: React.FC = () => {
     <div className="navDiv">
       <nav className={styles.navbar}>
         {/* Logo */}
-        <div className={styles.logo}>
-          <Link href="/">AgriFarmUnity</Link>
+        <div className="logo space-x-6 flex flex-row items-center">
+          <Image src={logoImage.src} alt="logo" width={54} height={54} />
+          <Link href="/" className=" text-3xl text-slate-900">
+            AgriFarm<label className="text-3xl text-green-500">Unity</label>
+          </Link>
         </div>
 
         {/* Hamburger Menu Icon (Mobile) */}
