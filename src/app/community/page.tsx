@@ -16,6 +16,28 @@ const CommunityPage: React.FC = () => {
           </p>
         </section>
 
+        {/* Community Forums Section */}
+        <section className={styles.forums}>
+          <h2 className={styles.sectionTitle}>Community Forums</h2>
+          <div className={styles.forumGrid}>
+            <div className={styles.forumCard}>
+              <h3>Farming Tips & Tricks</h3>
+              <p>Share and learn best practices for sustainable farming</p>
+              <span className={styles.topicCount}>156 topics</span>
+            </div>
+            <div className={styles.forumCard}>
+              <h3>Market Insights</h3>
+              <p>Discuss market trends and pricing strategies</p>
+              <span className={styles.topicCount}>89 topics</span>
+            </div>
+            <div className={styles.forumCard}>
+              <h3>Equipment Exchange</h3>
+              <p>Buy, sell, or trade farming equipment</p>
+              <span className={styles.topicCount}>124 topics</span>
+            </div>
+          </div>
+        </section>
+
         {/* Testimonials Section */}
         <section className={styles.testimonials}>
           <h2 className={styles.sectionTitle}>What Our Community Says</h2>
@@ -62,6 +84,28 @@ const CommunityPage: React.FC = () => {
               <h3>Harvest Festival</h3>
               <p>Date: December 10, 2023</p>
               <p>Location: Green Valley Farms</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Volunteer Opportunities Section */}
+        <section className={styles.volunteer}>
+          <h2 className={styles.sectionTitle}>Volunteer Opportunities</h2>
+          <div className={styles.volunteerGrid}>
+            <div className={styles.volunteerCard}>
+              <h3>Local Farm Aid</h3>
+              <p>Help small farms during harvest season</p>
+              <button className={styles.volunteerButton}>Learn More</button>
+            </div>
+            <div className={styles.volunteerCard}>
+              <h3>Community Garden</h3>
+              <p>Support urban farming initiatives</p>
+              <button className={styles.volunteerButton}>Learn More</button>
+            </div>
+            <div className={styles.volunteerCard}>
+              <h3>Knowledge Sharing</h3>
+              <p>Mentor new farmers in sustainable practices</p>
+              <button className={styles.volunteerButton}>Learn More</button>
             </div>
           </div>
         </section>

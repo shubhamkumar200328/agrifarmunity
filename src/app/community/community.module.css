@@ -137,3 +137,110 @@
     font-size: 1.5rem;
   }
 }
+
+/* Community Forums Section */
+.forums {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.forumGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.forumCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.forumCard:hover {
+  transform: translateY(-5px);
+}
+
+.forumCard h3 {
+  color: #2c5282;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.forumCard p {
+  color: #4a5568;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.topicCount {
+  display: inline-block;
+  background: #e2e8f0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+/* Volunteer Opportunities Section */
+.volunteer {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.volunteerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.volunteerCard {
+  background: #f7fafc;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.volunteerCard h3 {
+  color: #2c5282;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.volunteerCard p {
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.volunteerButton {
+  background-color: #4299e1;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.volunteerButton:hover {
+  background-color: #3182ce;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .forumGrid,
+  .volunteerGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .forums,
+  .volunteer {
+    padding: 3rem 1rem;
+  }
+}

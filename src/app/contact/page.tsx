@@ -68,7 +68,8 @@ const ContactPage: React.FC = () => {
           <h2 className={styles.sectionTitle}>Find Us on the Map</h2>
           <div className={styles.map}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093747!2d144.95373531531615!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d6a32f4f1c8e!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1625072000000!5m2!1sen!2sus"
+              // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093747!2d144.95373531531615!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d6a32f4f1c8e!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1625072000000!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d177343.3461097756!2d75.7235625!3d26.9124339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db22737889dbf%3A0x65ebba9f77e32172!2sJaipur%2C%20Rajasthan%2C%20India!5e0!3m2!1sen!2sus!4v1612800079605!5m2!1sen!2sus"
               width="100%"
               height="400"
               style={{ border: 0 }}
