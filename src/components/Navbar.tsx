@@ -1,5 +1,4 @@
 "use client"
-
 import React, { useState } from "react"
 import Link from "next/link"
 import styles from "@/components/Navbar.module.css"
@@ -37,23 +36,21 @@ const Navbar: React.FC = () => {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
             <Link href="/servicesoffered">Services</Link>
           </li>
           <li>
             <Link href="/community">Community</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/admin">Admin</Link>
           </li>
           <li>
-            <Link href="/login">login</Link>
+            <Link href="/user/profile">Profile</Link>
           </li>
         </ul>
       </nav>
-      <hr className="h-1 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500" />
+      {/* <hr className=" h-0.5 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500" /> */}
+      <hr className=" h-0.5 bg-gradient-to-r from-green-400  to-black" />
     </div>
   )
 }

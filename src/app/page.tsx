@@ -9,7 +9,7 @@ const HomePage: React.FC = () => {
       <Navbar />
       <div className={styles.container}>
         {/* Hero Section */}
-        <header className={styles.hero}>
+        <header className={styles.heros}>
           <h1 className={styles.heroTitle}>Welcome to AgriFarmUnity</h1>
           <p className={styles.heroSubtitle}>
             Uniting Farmers, Growing Communities

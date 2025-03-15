@@ -8,13 +8,15 @@
 }
 
 /* Hero Section */
-.hero {
+.heros {
   text-align: center;
   padding: 100px 20px;
   background: linear-gradient(to right, #4caf50, #81c784);
   color: white;
   border-radius: 10px;
   margin-bottom: 40px;
+  width: 100%;
+  height: auto;
 }
 
 .heroTitle {

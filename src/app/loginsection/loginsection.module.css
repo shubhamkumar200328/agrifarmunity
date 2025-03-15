@@ -1,0 +1,28 @@
+.container {
+  width: 60%;
+  height: auto;
+  padding: 30px;
+  margin: 50px auto;
+  border: 1px solid black;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.child1,
+.child2 {
+  text-align: center;
+  font-size: x-large;
+  width: 30%;
+  height: auto;
+  background-color: seagreen;
+  padding: 5px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.child1:hover,
+.child2:hover {
+  background: rgb(15, 241, 113);
+  color: black;
+}

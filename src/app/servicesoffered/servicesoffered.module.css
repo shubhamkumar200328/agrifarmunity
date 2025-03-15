@@ -48,8 +48,13 @@
   background: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(9, 152, 57, 0.5);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .serviceCard h3 {
@@ -61,6 +66,28 @@
 .serviceCard p {
   font-size: 1rem;
   color: #666;
+}
+
+/* Image Styling */
+.serviceImage {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+/* CTA Button */
+.serviceButton {
+  background: #388e3c;
+  color: white;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.serviceButton:hover {
+  background: #2e7d32;
+  transform: scale(1.05);
 }
 
 /* Call-to-Action Section */

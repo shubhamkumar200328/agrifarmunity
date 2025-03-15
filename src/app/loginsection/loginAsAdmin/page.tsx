@@ -1,8 +1,8 @@
 import React from "react"
 import Link from "next/link"
-import styles from "@/app/login/auth.module.css"
+import styles from "@/app/loginsection/login/auth.module.css"
 
-const LoginPage: React.FC = () => {
+const LoginAsAdmin: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.authBox}>
@@ -22,7 +22,7 @@ const LoginPage: React.FC = () => {
         </form>
         <p className={styles.switchText}>
           Don&apos;t have an account?{" "}
-          <Link href="/register" className={styles.switchLink}>
+          <Link href="/user/register" className={styles.switchLink}>
             Register here
           </Link>
         </p>
@@ -31,4 +31,4 @@ const LoginPage: React.FC = () => {
   )
 }
 
-export default LoginPage
+export default LoginAsAdmin

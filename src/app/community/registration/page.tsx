@@ -1,8 +1,8 @@
 import React from "react"
 import Link from "next/link"
-import styles from "@/app/login/auth.module.css"
+import styles from "@/app/user/login/auth.module.css"
 
-const RegisterPage: React.FC = () => {
+const RegisterAsAdmin: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.authBox}>
@@ -44,4 +44,4 @@ const RegisterPage: React.FC = () => {
   )
 }
 
-export default RegisterPage
+export default RegisterAsAdmin
