@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "next/link"
-import styles from "@/app/user/login/auth.module.css"
+import styles from "@/app/loginsection/login/auth.module.css"
 
 const RegisterAsAdmin: React.FC = () => {
   return (
