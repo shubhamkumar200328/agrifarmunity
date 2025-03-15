@@ -12,7 +12,7 @@ export default function Login() {
           <Link href="/loginsection/login">User/Community</Link>
         </div>
         <div className={styles.child2}>
-          <Link href="/loginsection/loginAsAdmin">Admin</Link>
+          <Link href="/loginsection/login-as-admin">Admin</Link>
         </div>
       </div>
     </>

@@ -6,7 +6,7 @@ const RegisterPage: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.authBox}>
-        <h1 className={styles.title}>Register</h1>
+        <h1 className={styles.title}>User-registeraction</h1>
         <form className={styles.form}>
           <div className={styles.formGroup}>
             <label htmlFor="name">Name</label>
