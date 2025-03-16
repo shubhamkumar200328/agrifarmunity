@@ -35,7 +35,10 @@ const RegisterAsAdminPage: React.FC = () => {
         </form>
         <p className={styles.switchText}>
           Already have an account?{" "}
-          <Link href="/login" className={styles.switchLink}>
+          <Link
+            href="/loginsection/login-as-admin"
+            className={styles.switchLink}
+          >
             Login here
           </Link>
         </p>

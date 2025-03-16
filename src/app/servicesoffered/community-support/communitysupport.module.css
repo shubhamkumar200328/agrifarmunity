@@ -1,4 +1,134 @@
+/* Community Support Page Styles */
+
+/* Main container */
 .container {
-  margin: 40px auto;
-  padding: 20px;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 40px 20px;
+  background-color: #131212a9;
+  border-radius: 21px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #0070f3, #005bb5);
+  color: white;
+  border-radius: 10px;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.heroText {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Section Styling */
+.section {
+  margin-top: 50px;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* List Styling */
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.listItem {
+  padding: 10px;
+  margin-bottom: 8px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.listItem:hover {
+  transform: translateY(-3px);
+}
+
+/* Links */
+.link {
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #005bb5;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: #0070f3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #005bb5;
+}
+
+/* Forms */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroText {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  .button {
+    width: 100%;
+  }
 }

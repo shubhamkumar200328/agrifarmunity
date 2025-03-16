@@ -30,6 +30,55 @@ export default function Cropssell() {
             Cards which showing the crops collection details which are on sell,
             will appear here.
           </p>
+
+          {/* apply map on these following cards just below */}
+          <div className={styles.parentCropCollection}>
+            <div className={styles.childCropCollection}>
+              <h3>Grains</h3>
+              <ul>
+                <li>live on sell: 100 crops</li>
+                <li>sold out: 1500 crops</li>
+                <li>upcoming : 300 crops</li>
+                <li>nearest update in: 10 days</li>
+              </ul>
+            </div>
+            <div className={styles.childCropCollection}>
+              <h3>Fruits</h3>
+              <ul>
+                <li>live on sell: 100 crops</li>
+                <li>sold out: 1500 crops</li>
+                <li>upcoming : 300 crops</li>
+                <li>nearest update in: 10 days</li>
+              </ul>
+            </div>
+            <div className={styles.childCropCollection}>
+              <h3>Vegetables</h3>
+              <ul>
+                <li>live on sell: 100 crops</li>
+                <li>sold out: 1500 crops</li>
+                <li>upcoming : 300 crops</li>
+                <li>nearest update in: 10 days</li>
+              </ul>
+            </div>
+            <div className={styles.childCropCollection}>
+              <h3>Oilseeds</h3>
+              <ul>
+                <li>live on sell: 100 crops</li>
+                <li>sold out: 1500 crops</li>
+                <li>upcoming : 300 crops</li>
+                <li>nearest update in: 10 days</li>
+              </ul>
+            </div>
+            <div className={styles.childCropCollection}>
+              <h3>Herbs & Spices</h3>
+              <ul>
+                <li>live on sell: 100 crops</li>
+                <li>sold out: 1500 crops</li>
+                <li>upcoming : 300 crops</li>
+                <li>nearest update in: 10 days</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         {/* Each Crop Selling Details Section */}

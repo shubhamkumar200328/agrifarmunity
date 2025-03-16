@@ -63,3 +63,21 @@
   max-width: 90%;
   min-height: 200px;
 }
+
+.parentCropCollection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.childCropCollection {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 11px;
+  margin: 11px auto;
+}
+
+.childCropCollection h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0cce16;
+}

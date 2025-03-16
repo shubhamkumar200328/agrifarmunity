@@ -35,7 +35,7 @@ const RegisterPage: React.FC = () => {
         </form>
         <p className={styles.switchText}>
           Already have an account?{" "}
-          <Link href="/login" className={styles.switchLink}>
+          <Link href="/loginsection/login" className={styles.switchLink}>
             Login here
           </Link>
         </p>
