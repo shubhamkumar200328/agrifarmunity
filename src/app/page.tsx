@@ -1,12 +1,9 @@
-import React from "react"
-import styles from "@/components/Home.module.css" // CSS module for styling
-import Navbar from "@/components/Navbar"
-import Footer from "@/components/Footer"
+import React from 'react';
+import styles from '@/components/Home.module.css'; // CSS module for styling
 
 const HomePage: React.FC = () => {
   return (
     <>
-      <Navbar />
       <div className={styles.container}>
         {/* Hero Section */}
         <header className={styles.heros}>
@@ -51,9 +48,8 @@ const HomePage: React.FC = () => {
           <button className={styles.primaryButton}>Get Started</button>
         </section>
       </div>
-      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

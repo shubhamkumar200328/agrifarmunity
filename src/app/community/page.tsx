@@ -1,12 +1,9 @@
-import React from "react"
-import styles from "@/app/community/community.module.css"
-import Footer from "@/components/Footer"
-import Navbar from "@/components/Navbar"
+import React from 'react';
+import styles from '@/app/community/community.module.css';
 
 const CommunityPage: React.FC = () => {
   return (
     <>
-      <Navbar />
       <div className={styles.container}>
         {/* Hero Section */}
         <section className={styles.hero}>
@@ -121,9 +118,8 @@ const CommunityPage: React.FC = () => {
           <button className={styles.ctaButton}>Join Now</button>
         </section>
       </div>
-      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default CommunityPage
+export default CommunityPage;

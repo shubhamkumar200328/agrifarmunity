@@ -1,60 +1,57 @@
-"use client"
+'use client';
 
-import React, { useState } from "react"
-import { useRouter } from "next/navigation"
-import styles from "@/app/servicesoffered/crop-exchanges/cropexchanges.module.css"
-import Navbar from "@/components/Navbar"
-import Footer from "@/components/Footer"
+import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import styles from '@/app/servicesoffered/crop-exchanges/cropexchanges.module.css';
 
 interface ExchangeRequest {
-  id: number
-  name: string
-  contact: string
-  cropOffered: string
-  quantity: string
-  exchangeFor: string
-  location: string
-  notes?: string
+  id: number;
+  name: string;
+  contact: string;
+  cropOffered: string;
+  quantity: string;
+  exchangeFor: string;
+  location: string;
+  notes?: string;
 }
 
 const CropExchangePage: React.FC = () => {
-  const router = useRouter()
-  const [requests, setRequests] = useState<ExchangeRequest[]>([])
+  const router = useRouter();
+  const [requests, setRequests] = useState<ExchangeRequest[]>([]);
   const [form, setForm] = useState<ExchangeRequest>({
     id: Date.now(),
-    name: "",
-    contact: "",
-    cropOffered: "",
-    quantity: "",
-    exchangeFor: "",
-    location: "",
-    notes: "",
-  })
+    name: '',
+    contact: '',
+    cropOffered: '',
+    quantity: '',
+    exchangeFor: '',
+    location: '',
+    notes: '',
+  });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
-    setForm({ ...form, [e.target.name]: e.target.value })
-  }
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    setRequests([...requests, { ...form, id: Date.now() }])
+    e.preventDefault();
+    setRequests([...requests, { ...form, id: Date.now() }]);
     setForm({
       id: Date.now(),
-      name: "",
-      contact: "",
-      cropOffered: "",
-      quantity: "",
-      exchangeFor: "",
-      location: "",
-      notes: "",
-    })
-  }
+      name: '',
+      contact: '',
+      cropOffered: '',
+      quantity: '',
+      exchangeFor: '',
+      location: '',
+      notes: '',
+    });
+  };
 
   return (
     <>
-      <Navbar />
       <div className={styles.container}>
         {/* Hero Section */}
         <section className={styles.hero}>
@@ -171,15 +168,14 @@ const CropExchangePage: React.FC = () => {
           <p>Start trading your crops today and connect with other farmers.</p>
           <button
             className={styles.ctaButton}
-            onClick={() => router.push("/loginsection")}
+            onClick={() => router.push('/loginsection')}
           >
             Get Started
           </button>
         </section>
       </div>
-      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default CropExchangePage
+export default CropExchangePage;

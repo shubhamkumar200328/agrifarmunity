@@ -1,12 +1,9 @@
-import React from "react"
-import styles from "@/app/contact/contact.module.css"
-import Navbar from "@/components/Navbar"
-import Footer from "@/components/Footer"
+import React from 'react';
+import styles from '@/app/contact/contact.module.css';
 
 const ContactPage: React.FC = () => {
   return (
     <>
-      <Navbar />
       <div className={styles.container}>
         {/* Hero Section */}
         <section className={styles.hero}>
@@ -79,9 +76,8 @@ const ContactPage: React.FC = () => {
           </div>
         </section>
       </div>
-      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default ContactPage
+export default ContactPage;

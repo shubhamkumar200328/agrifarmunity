@@ -1,10 +1,8 @@
-import Navbar from "@/components/Navbar"
-import styles from "@/app/user/profile/profile.module.css"
+import styles from '@/app/user/profile/profile.module.css';
 
 export default function Profile() {
   return (
     <>
-      <Navbar />
       <div className={styles.container}>
         <div className={styles.child1}>
           <h3>User-Profile</h3>
@@ -20,5 +18,5 @@ export default function Profile() {
         </div>
       </div>
     </>
-  )
+  );
 }

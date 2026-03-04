@@ -1,10 +1,8 @@
-import Navbar from "@/components/Navbar"
-import styles from "@/app/servicesoffered/direct-crop-sales/cropsell.module.css"
+import styles from '@/app/servicesoffered/direct-crop-sales/cropsell.module.css';
 
 export default function Cropssell() {
   return (
     <>
-      <Navbar />
       <div className={styles.container}>
         {/* Hero Section */}
         <section className={styles.hero}>
@@ -128,5 +126,5 @@ export default function Cropssell() {
         </section>
       </div>
     </>
-  )
+  );
 }
