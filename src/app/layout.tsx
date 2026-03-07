@@ -7,6 +7,8 @@ import Navbar from '@/components/Navbar';
 import { ClerkProvider } from '@clerk/nextjs';
 import Footer from '@/components/Footer';
 
+import { Toaster } from 'sonner';
+
 const bricolage = Bricolage_Grotesque({
   variable: '--font-bricolage',
   subsets: ['latin'],
@@ -34,6 +36,7 @@ export default function RootLayout({
         <body className={`${outfitFont.className} antialiased`}>
           <Navbar />
           {children}
+          <Toaster position="top-right" richColors />
           <Footer />
         </body>
       </html>
